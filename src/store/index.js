@@ -6,6 +6,10 @@ const store = createStore({
       
     }
   },
+  mutation: {
+
+  },
+  
 })
 
 export default store
