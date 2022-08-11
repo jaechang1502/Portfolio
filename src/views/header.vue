@@ -1,9 +1,10 @@
 <template>
-  <header>
-    <div>
+  <div class="header">
+    <div class="navcon">
+  
         
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
