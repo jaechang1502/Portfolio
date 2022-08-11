@@ -4,6 +4,7 @@
      :scrollbar="{
       hide: true,
     }"
+    :mousewheel="true"  
     :modules="modules"
     class="mySwiper"
   >
@@ -19,12 +20,11 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+import './plugin/swiper'
 
 
 // import required modules
-import { Scrollbar } from "swiper";
+import { Scrollbar, Mousewheel } from "swiper";
 
 export default {
   components: {
@@ -33,7 +33,7 @@ export default {
   },
   setup() {
     return {
-      modules: [Scrollbar],
+      modules: [Scrollbar, Mousewheel],
     };
   },
 };
