@@ -17,8 +17,8 @@
     </div>
     <div class="header_right">
       <div class="space-y-2 header_right_button">
-        <span class="block w-5 h-0.5 bg-gray-600"></span>
-        <span class="block w-8 h-0.5 bg-gray-600"></span>
+        <span class="block w-5 h-0.5 bg-black"></span>
+        <span class="block w-8 h-0.5 bg-black"></span>
       </div>
     </div>
   </div>
