@@ -3,8 +3,9 @@ import Home from '../components/introHome.vue'
 
 const routes = [
     {
-      path: "/#",
+      path: "/",
       component: Home,
+      name: "#Home"
     }
   ];
 

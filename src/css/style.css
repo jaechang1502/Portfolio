@@ -1,0 +1,36 @@
+.header{
+    position: absolute;
+      z-index: 30;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0.6;
+  }
+  .header_con{
+    display: flex;
+    padding: 1.5rem 2.74rem;
+    justify-content: space-between; 
+  }
+  .header_left{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+  }
+  .header_right{
+    display: flex;
+    align-items: center;
+  }
+  .header_img{
+    height: 80px;
+  }
+  .header_right_button{
+    cursor: pointer;
+  }
+  .headerUL{
+    color: beige;
+  }
+  .Intro{
+    background: rgb(247,3,3);
+    background: linear-gradient(90deg, rgba(247,3,3,1) 60%, rgba(255,255,0,1) 100%);
+    font-size: 4rem;
+  }

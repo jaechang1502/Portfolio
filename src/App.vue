@@ -9,14 +9,15 @@
     :modules="modules"
     class="mySwiper"
   >
-    <swiper-slide>111</swiper-slide>
+    <swiper-slide class="Intro"><Intro></Intro></swiper-slide>
     <swiper-slide>Slide 2</swiper-slide>
     <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Contact Me</swiper-slide>
   </swiper>
 </template>
 <script>
+import Intro from './components/introHome.vue'
+
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -30,6 +31,7 @@ import headerView from './views/header.vue';
 
 export default {
   components: {
+    Intro,
     Swiper, 
     SwiperSlide,
     headerView
