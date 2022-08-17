@@ -1,21 +1,25 @@
 <template>
     <div class="Home">
-        <div class="fw800">
-            <vue-typer text='watermelon'></vue-typer>   
+        <div class="font-extrabold">
+           <div>
+            Hi
+           </div>
+           <div>I'm Front-end</div>
+           <div>Web Developer</div>
         </div>
         
     </div>
 </template>
 
 <script>
-import {VueTyper} from 'vue-typer'
-export default {
-    components:{
-        VueTyper
-    }
-    
-   
 
+export default {
+    data(){
+        return{
+            introduce: "Hi\n I'm FrontEnd\n Web Developer"
+        }
+    }
+   
 }
 </script>
 
