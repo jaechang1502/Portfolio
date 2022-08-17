@@ -1,13 +1,12 @@
 <template>
-    <div class="Home">
-        <div class="font-extrabold">
-           <div>
-            Hi
-           </div>
+    <div class="Home flex">
+        <div class="font-extrabold HomeText">
+           <div>Hi</div>
            <div>I'm Front-end</div>
            <div>Web Developer</div>
         </div>
-        
+        <div class="Home_Hole">
+        </div>
     </div>
 </template>
 
@@ -18,6 +17,9 @@ export default {
         return{
             introduce: "Hi\n I'm FrontEnd\n Web Developer"
         }
+    },
+    mounted(){
+        
     }
    
 }
