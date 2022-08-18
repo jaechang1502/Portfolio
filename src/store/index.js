@@ -3,11 +3,13 @@ import { createStore } from 'vuex'
 const store = createStore({
   state(){
     return {
-      
+      rightMenuOpen : false
     }
   },
-  mutation: {
-
+  mutations: {
+    rightMenuMutation(state,data){
+      state.rightMenuOpen = data;
+    }
   },
   
 })
