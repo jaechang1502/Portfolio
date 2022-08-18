@@ -7,7 +7,7 @@
       </router-link>
       <dlv>
         <nav class="ml-10">
-          <ul class="flex headerUL">
+          <ul class="flex headerUL" :style="{color:colorphonewithmail}">
             <li class="flex-auto ml-2">+82 10-3692-5367</li>
             <li class="flex-auto ml-2">/</li>
             <li class="flex-auto ml-2">jaechang1502@github.com</li>
@@ -36,6 +36,14 @@ export default {
   data(){
     return {
         rightMenuOpen: false
+    }
+  },
+  computed:{
+    colorphonewithmail(){
+      const x = this.$store.state.x;
+      if(x>=50&&x<200||x>=400&&x<550||x>770&&x<920||x>=1027&&x<=1277||x>1490){
+       return `#000 `;
+      }
     }
   }  
 

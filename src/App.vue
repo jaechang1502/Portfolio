@@ -1,6 +1,5 @@
 <template>
 <headerView></headerView>
-
   <swiper
     :direction= swiper.direction
     :scrollbar=swiper.scrollbar
@@ -8,7 +7,7 @@
     :modules="modules"
     class="mySwiper"
   >
-    <swiper-slide class="Intro" ><Intro></Intro></swiper-slide>
+    <swiper-slide class="Intro" @mousemove="onMousemove" :style="{background: createBackground}" ><Intro></Intro></swiper-slide>
     <swiper-slide><Skill></Skill></swiper-slide>
     <swiper-slide>Slide 3</swiper-slide>
     <swiper-slide>Contact Me</swiper-slide>
@@ -46,8 +45,19 @@ export default {
         },
         mousewheel: true,
         modules: "modules"
-
-      }
+      },
+      
+    }
+  },
+  methods:{
+    onMousemove(e){
+      this.$store.commit('moveX',e.clientX);
+      this.$store.commit('moveY',e.clientY);
+    }
+  },
+  computed: {
+    createBackground(){
+      return `linear-gradient(90deg, hsl(${this.$store.state.x},80%,60%) 60%, hsl(${this.$store.state.y},80%,80%) 100%)`;
     }
   },
   setup() {
