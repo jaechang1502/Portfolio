@@ -94,3 +94,7 @@
     vertical-align: super;
     font-weight: 400;
   }
+  .aboutIntro{
+     color: rgba(0,0,0, 0.5);
+     font-size: 1.5rem;
+  }
