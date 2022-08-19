@@ -5,7 +5,7 @@
       <router-link to="/#Home">
       <img src="../assets/123.jpg" class="header_img">
       </router-link>
-      <dlv>
+      <div>
         <nav class="ml-10">
           <ul class="flex headerUL" :style="{color:colorphonewithmail}">
             <li class="flex-auto ml-2">+82 10-3692-5367</li>
@@ -13,7 +13,7 @@
             <li class="flex-auto ml-2">jaechang1502@github.com</li>
           </ul>
         </nav>
-      </dlv>
+      </div>
     </div>
     <div class="header_right" >
       <div class="space-y-2 header_right_button" @click="$store.commit('rightMenuMutation',true)">

@@ -8,14 +8,14 @@
     class="mySwiper"
   >
     <swiper-slide class="Intro" @mousemove="onMousemove" :style="{background: createBackground}" ><Intro></Intro></swiper-slide>
-    <swiper-slide><Skill></Skill></swiper-slide>
+    <swiper-slide class="AboutMe"><AboutMe></AboutMe></swiper-slide>
     <swiper-slide>Slide 3</swiper-slide>
     <swiper-slide>Contact Me</swiper-slide>
   </swiper>
 </template>
 <script>
 import Intro from './components/introHome.vue'
-import Skill from './components/skillComponent.vue'
+import AboutMe from './components/AboutMe.vue'
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -31,7 +31,7 @@ import headerView from './views/header.vue';
 export default {
   components: {
     Intro,
-    Skill,
+    AboutMe,
     Swiper, 
     SwiperSlide,
     headerView

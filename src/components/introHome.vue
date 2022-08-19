@@ -5,8 +5,6 @@
            <div>I'm Front-end</div>
            <div>Web Developer</div>
         </div>
-        <div class="Home_Hole">
-        </div>
     </div>
 </template>
 

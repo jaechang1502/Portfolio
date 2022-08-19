@@ -1,3 +1,4 @@
+/* header */
 .header{
     position: absolute;
       z-index: 30;
@@ -29,20 +30,20 @@
   .headerUL{
     color: beige;
   }
+
+  /* IntroHome */
   .Intro{
     background: rgb(247,3,3);
     font-size: 4rem;
+    justify-content: center;  
   }
   .HomeText{
     position: relative;
     right: 300px;
     color: rgba(255,255, 255, 0.5);
   }
-  .Home .Home_Hole{
-    background-image: url(../asset/elipse-home-slide.png);
-    transition-duration: 1.5s;
-    transition-delay: 300ms
-  }
+  
+  /* rightMenu */
   .rightMenu{
     width: 25rem;
     position:fixed;
@@ -70,4 +71,26 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     cursor: pointer;
+  }
+
+  /* AboutMe */
+
+  .aboutmeCon{
+    position: relative;
+    right: 150px;
+  }
+  .aboutmeCon .subtext{
+    opacity: 0.4;
+    font-weight: 2rem;
+    font-size: 1.3rem;
+  }
+  .aboutmeCon .working{
+    font-size: 7rem;
+    font-weight:900;
+    line-height:1;
+  }
+  .aboutmeCon .subworks{
+    font-size: 2rem;
+    vertical-align: super;
+    font-weight: 400;
   }
