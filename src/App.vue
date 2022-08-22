@@ -9,13 +9,15 @@
   >
     <swiper-slide class="Intro" @mousemove="onMousemove" :style="{background: createBackground}" ><Intro></Intro></swiper-slide>
     <swiper-slide class="AboutMe"><AboutMe></AboutMe></swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Contact Me</swiper-slide>
+    <swiper-slide>Skill</swiper-slide>
+    <swiper-slide>재창이 팝니다 시발 좀 사 </swiper-slide>
+    <swiper-slide><ContactMe></ContactMe></swiper-slide>
   </swiper>
 </template>
 <script>
 import Intro from './components/introHome.vue'
 import AboutMe from './components/AboutMe.vue'
+import ContactMe from './components/ContactMe.vue'
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -28,14 +30,17 @@ import './plugin/swiper'
 import { Scrollbar, Mousewheel } from "swiper";
 import headerView from './views/header.vue';
 
+
+
 export default {
   components: {
     Intro,
     AboutMe,
-    Swiper, 
+    Swiper,
     SwiperSlide,
-    headerView
-  },
+    headerView,
+    ContactMe,
+},
   data(){
     return{ 
       swiper: {

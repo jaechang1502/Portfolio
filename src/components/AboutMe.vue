@@ -27,7 +27,7 @@
             <div>
                 <div class="mb-3">
                     <div class="aboutIntro mb-3">Career changes</div>
-                    <div></div>
+                    <div class="aboutContent"></div>
                 </div>
                 <div>
                     <div class="aboutIntro mb-3">21uo</div>
