@@ -3,18 +3,22 @@
   <swiper
     :direction= swiper.direction
     :scrollbar=swiper.scrollbar
-    :mousewheel=swiper.mousewheel  
+    :mousewheel=swiper.mousewheel
+      
     :modules="modules"
     class="mySwiper"
+    :ref="mySwiper"
+    @swiper="onSwiper" @slideChange="onSlideChange" @reachEnd="reachEnd"
   >
-    <swiper-slide class="Intro" @mousemove="onMousemove" :style="{background: createBackground}" ><Intro></Intro></swiper-slide>
+    <swiper-slide><router-view></router-view></swiper-slide>
     <swiper-slide class="AboutMe"><AboutMe></AboutMe></swiper-slide>
     <swiper-slide>Skill</swiper-slide>
-    <swiper-slide>재창이 팝니다 시발 좀 사 </swiper-slide>
+    <swiper-slide>etc</swiper-slide>
     <swiper-slide><ContactMe></ContactMe></swiper-slide>
   </swiper>
 </template>
 <script>
+import {ref} from 'vue';
 import Intro from './components/introHome.vue'
 import AboutMe from './components/AboutMe.vue'
 import ContactMe from './components/ContactMe.vue'
@@ -49,24 +53,35 @@ export default {
           hide: true
         },
         mousewheel: true,
-        modules: "modules"
+        modules: "modules",
       },
       
     }
   },
-  methods:{
-    onMousemove(e){
-      this.$store.commit('moveX',e.clientX);
-      this.$store.commit('moveY',e.clientY);
-    }
-  },
-  computed: {
-    createBackground(){
-      return `linear-gradient(90deg, hsl(${this.$store.state.x},80%,60%) 60%, hsl(${this.$store.state.y},80%,80%) 100%)`;
-    }
+  computed:{
+      change(index){
+        if(index === 0){
+        return this.$router.push('/');
+      }
+      }
+      
+
+
   },
   setup() {
+    const onSwiper = (swiper) => {
+        console.log(swiper);
+      };
+      const onSlideChange = () => {
+        console.log('slide change');
+      };
+      const reachEnd = ()=>{
+        console.log('reachend')
+      }
     return {
+      onSwiper,
+      onSlideChange,
+      reachEnd,
       modules: [Scrollbar, Mousewheel],
     };
   },

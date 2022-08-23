@@ -36,10 +36,16 @@
     background: rgb(247,3,3);
     font-size: 4rem;
     justify-content: center;  
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
   .HomeText{
     position: relative;
-    right: 300px;
+    left: 150px;
+    top: 200px;
     color: rgba(255,255, 255, 0.5);
   }
   
