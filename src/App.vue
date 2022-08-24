@@ -7,21 +7,22 @@
       
     :modules="modules"
     class="mySwiper"
-    :ref="mySwiper"
     @swiper="onSwiper" @slideChange="onSlideChange" @reachEnd="reachEnd"
   >
     <swiper-slide><router-view></router-view></swiper-slide>
     <swiper-slide class="AboutMe"><AboutMe></AboutMe></swiper-slide>
-    <swiper-slide>Skill</swiper-slide>
+    <swiper-slide><Skills></Skills></swiper-slide>
     <swiper-slide>etc</swiper-slide>
     <swiper-slide><ContactMe></ContactMe></swiper-slide>
   </swiper>
 </template>
 <script>
-import {ref} from 'vue';
+
 import Intro from './components/introHome.vue'
 import AboutMe from './components/AboutMe.vue'
 import ContactMe from './components/ContactMe.vue'
+import Skills from './components/SkillsComponent.vue'
+import headerView from './views/header.vue';
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -32,7 +33,7 @@ import './plugin/swiper'
 
 // import required modules
 import { Scrollbar, Mousewheel } from "swiper";
-import headerView from './views/header.vue';
+
 
 
 
@@ -44,6 +45,7 @@ export default {
     SwiperSlide,
     headerView,
     ContactMe,
+    Skills
 },
   data(){
     return{ 
@@ -70,10 +72,10 @@ export default {
   },
   setup() {
     const onSwiper = (swiper) => {
-        console.log(swiper);
+        console.log(swiper.slideTo);
       };
       const onSlideChange = () => {
-        console.log('slide change');
+        console.log('123')
       };
       const reachEnd = ()=>{
         console.log('reachend')

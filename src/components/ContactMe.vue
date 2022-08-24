@@ -27,29 +27,6 @@ export default {
 </script>
 
 <style>
-.contactMeCon{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-.contactMeSub{
-    position: absolute;
-    left: 250px;
-    top: 220px;
-}
-.contactMe .subject{
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-}
-.contactMe .sub_con{
-    color: rgb(255, 255, 255,0.5);
-    font-size: 1rem;
-}
+
 
 </style>
