@@ -42,9 +42,14 @@ body {
 }
 
 .swiper-slide img {
-  display: block;
+  /* display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;s
+  object-fit: cover; */
+}
+
+.skillswiper{ 
+  top: 100px;
+  left: 200px;
 }
 

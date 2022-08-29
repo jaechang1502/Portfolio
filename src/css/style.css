@@ -64,9 +64,7 @@
     padding: 2.5rem 4.375rem 3.75rem;
   }
   .rightMenu .rightMenuClose{
-    isplay: flex;
-    width: 100%;
-    padding-bottom: 6.25rem;
+    display: flex;
     color: #ccc;
     -webkit-box-align: center;
     -webkit-align-items: center;

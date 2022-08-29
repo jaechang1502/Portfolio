@@ -17,8 +17,8 @@
     </div>
     <div class="header_right" >
       <div class="space-y-2 header_right_button" @click="$store.commit('rightMenuMutation',true)">
-        <span class="block w-5 h-0.5 bg-black"></span>
-        <span class="block w-8 h-0.5 bg-black"></span>
+        <span class="block w-5 h-0.5 bg-black" :style="{backgroundColor:rightcolor}"></span>
+        <span class="block w-8 h-0.5 bg-black" :style="{backgroundColor:rightcolor}"></span>
       </div>
     </div>
   </div>
@@ -35,14 +35,24 @@ export default {
   },
   data(){
     return {
-        rightMenuOpen: false
+        rightMenuOpen: false,
+        isActive: true
     }
   },
   computed:{
     colorphonewithmail(){
       const x = this.$store.state.x;
-      if(x>=50&&x<200||x>=400&&x<550||x>770&&x<920||x>=1027&&x<=1277||x>1490){
-       return `#000 `;
+      const slide = this.$store.state.swiperindex
+      if(x>=50&&x<200||x>=400&&x<550||x>770&&x<920||x>=1027&&x<=1277||x>1490||slide==1||slide==3){
+       return `#000`;
+      }else{
+        return `#F5F5DC`;
+      }
+    },
+    rightcolor(){
+      const slide = this.$store.state.swiperindex
+      if(slide==2||slide==4){
+        return `#ffffff`;
       }
     },
     phoneNumber(){
@@ -57,6 +67,5 @@ export default {
 </script>
 
 <style>
-
 
 </style>

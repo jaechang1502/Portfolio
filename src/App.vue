@@ -56,33 +56,24 @@ export default {
         },
         mousewheel: true,
         modules: "modules",
-      },
-      
+      },  
     }
   },
-  computed:{
-      change(index){
-        if(index === 0){
-        return this.$router.push('/');
-      }
-      }
-      
-
-
+  methods: {
+    onSwiper(swiper){
+      this.$store.commit('swiper',swiper);
+      console.log(swiper,123)
+    },
+    onSlideChange(index){
+      console.log(index.activeIndex)
+      this.$store.commit('swiperIndex',index.activeIndex)
+    }
   },
-  setup() {
-    const onSwiper = (swiper) => {
-        console.log(swiper.slideTo);
-      };
-      const onSlideChange = () => {
-        console.log('123')
-      };
+  setup() {    
       const reachEnd = ()=>{
         console.log('reachend')
       }
     return {
-      onSwiper,
-      onSlideChange,
       reachEnd,
       modules: [Scrollbar, Mousewheel],
     };
