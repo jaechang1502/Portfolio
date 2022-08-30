@@ -2,7 +2,7 @@
 <div class="aboutmeCon p-8 grid grid-rows-3 grid-flow-col gap-4">
     <div class="row-span-3 p-5 m-2 font-bold">
         <div class="flex">
-            <div  class="working"><number :from="0" :to="8" :duration="2"></number></div>
+            <div  class="working"><number v-if="$store.state.swiperindex == 1" :from="0" :to="11" :duration="2"></number></div>
             <div>+</div>
         </div>
         

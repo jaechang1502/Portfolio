@@ -6,12 +6,16 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
       </svg>
     </div>
-    <div class=" text-white flex flex-col mt-10 justify-center font-bold text-6xl">
-      <div @click="homeclick" class="cursor-pointer mb-5 ">Home</div>
-      <div @click="Aboutclick" class="cursor-pointer mb-5">AboutMe</div>
-      <div @click="Skillclick" class="cursor-pointer mb-5">Skills</div>
-      <div @click="ETCclick" class="cursor-pointer mb-5">ETC</div>
-      <div @click="Contactclick" class="cursor-pointer mb-5">ContactMe</div>
+    <div class=" text-white flex flex-col mt-10 justify-center font-bold text-5xl">
+      <div @click="homeclick(0)" class="cursor-pointer mb-5 hover:text-amber-400">Home</div>
+      <div @click="homeclick(1)" class="cursor-pointer mb-5 hover:text-amber-400">AboutMe</div>
+      <div @click="homeclick(2)" class="cursor-pointer mb-5 hover:text-amber-400">Skills</div>
+      <div @click="homeclick(3)" class="cursor-pointer mb-5 hover:text-amber-400">Career</div>
+      <div @click="homeclick(4)" class="cursor-pointer mb-5 hover:text-amber-400">ContactMe</div>
+    </div>
+    <div class="text-white text-2xl flex mt-5 pt-9 justify-around">
+      <div class="cursor-pointer" @click="clicklocation('https://github.com/jaechang1502')">GitHub.</div>
+      <div class="cursor-pointer" @click="clicklocation('https://chiman.tistory.com')">Blog.</div>
     </div>
   </div>
 </Transition>
@@ -20,21 +24,15 @@
 <script>
 export default {
   methods:{
-    homeclick(){
-    this.$store.state.swiper.slideTo(0,0.2)
+    homeclick(k){
+    this.$store.state.swiper.slideTo(k,0.2)
     },
-    Aboutclick(){
-    this.$store.state.swiper.slideTo(1,0.2)
+    test(){
+      this.$store.commit('rightMenuMutation',false);
     },
-    Skillclick(){
-    this.$store.state.swiper.slideTo(2,0.2)
-    },
-    ETCclick(){
-    this.$store.state.swiper.slideTo(3,0.2)
-    },
-    Contactclick(){
-    this.$store.state.swiper.slideTo(4,0.2)
-    },
+    clicklocation(loca){
+      window.open(loca)
+    }
   }
 
 }

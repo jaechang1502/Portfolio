@@ -12,7 +12,7 @@
     <swiper-slide><router-view></router-view></swiper-slide>
     <swiper-slide class="AboutMe"><AboutMe></AboutMe></swiper-slide>
     <swiper-slide><Skills></Skills></swiper-slide>
-    <swiper-slide>etc</swiper-slide>
+    <swiper-slide><Career></Career></swiper-slide>
     <swiper-slide><ContactMe></ContactMe></swiper-slide>
   </swiper>
 </template>
@@ -22,6 +22,7 @@ import Intro from './components/introHome.vue'
 import AboutMe from './components/AboutMe.vue'
 import ContactMe from './components/ContactMe.vue'
 import Skills from './components/SkillsComponent.vue'
+import Career from './components/CareerComponent.vue'
 import headerView from './views/header.vue';
 
 // Import Swiper Vue.js components
@@ -45,7 +46,8 @@ export default {
     SwiperSlide,
     headerView,
     ContactMe,
-    Skills
+    Skills,
+    Career
 },
   data(){
     return{ 

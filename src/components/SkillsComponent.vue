@@ -3,7 +3,7 @@
     <div class="skillsbackground">
         <img src="../assets/star.jpg" alt=""/>
     </div>
-    <div class="text-white font-extrabold text-6xl relative skillcon">
+    <div class="text-white font-extrabold text-4xl relative skillcon">
         Skills
     </div>
     <div class="grid grid-cols-2 gap-5 w-8/12 justify-items-center skillSubCon">

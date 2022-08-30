@@ -10,7 +10,7 @@
           <ul class="flex headerUL" :style="{color:colorphonewithmail}">
             <li class="flex-auto ml-2 cursor-pointer" @click="phoneNumber">+82 10-3692-5367</li>
             <li class="flex-auto ml-2">/</li>
-            <li class="flex-auto ml-2 cursor-pointer" @click="mailto">jaechang1502@github.com</li>
+            <li class="flex-auto ml-2 cursor-pointer" @click="mailto">jaechang92@gmail.com</li>
           </ul>
         </nav>
       </div>
@@ -59,7 +59,7 @@ export default {
       document.location.href="tel:821076883321"
     },
     mailto(){
-      document.location.href="mailto:jaechang1502@github.com"
+      document.location.href="mailto:jaechang92@gmail.com"
     }
   }  
 
