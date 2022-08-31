@@ -64,10 +64,8 @@ export default {
   methods: {
     onSwiper(swiper){
       this.$store.commit('swiper',swiper);
-      console.log(swiper,123)
     },
     onSlideChange(index){
-      console.log(index.activeIndex)
       this.$store.commit('swiperIndex',index.activeIndex)
     }
   },

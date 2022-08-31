@@ -31,6 +31,24 @@
     color: beige;
   }
 
+   @media  (max-width: 576px) {
+      .header_con{
+        padding: 0.5rem 0.5rem;
+        justify-content: space-between; 
+      }
+      .header_left a{
+        width:20%;
+      }
+      .header_img{
+        height: 10%;
+      }
+      .header_left nav{
+        margin-left:1rem;
+        font-size: 0.2rem;
+      }
+    }
+  
+
   /* IntroHome */
   .Intro{
     background: rgb(247,3,3);
@@ -47,6 +65,24 @@
     left: 150px;
     top: 200px;
     color: rgba(255,255, 255, 0.5);
+  }
+  @media only screen and (max-width: 576px) {
+    .Intro{
+      background: rgb(247,3,3);
+      font-size: 3rem;
+      justify-content: center;  
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .HomeText{
+      position: relative;
+      left: 16px;
+      top: 200px;
+      color: rgba(255,255, 255, 0.5);
+    }
   }
   
   /* rightMenu */
@@ -101,6 +137,32 @@
   .aboutIntro{
      color: rgba(0,0,0, 0.5);
      font-size: 1.5rem;
+  }
+  @media only screen and (max-width: 576px) {
+    .aboutmeCon{
+      position: relative;
+      top:10px;
+      left: 0px;
+    }
+    .aboutmeCon .subtext{
+      opacity: 0.4;
+      font-weight: 0.2rem;
+      font-size: 0.3rem;
+    }
+    .aboutmeCon .working{
+      font-size: 2rem;
+      font-weight:300;
+      line-height:1;
+    }
+    .aboutmeCon .subworks{
+      font-size: 0.2rem;
+      vertical-align: super;
+      font-weight: 300;
+    }
+    .aboutIntro{
+       color: rgba(0,0,0, 0.5);
+       font-size: 0.5rem;
+    }
   }
   /*Skills*/
   

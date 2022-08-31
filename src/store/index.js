@@ -7,7 +7,8 @@ const store = createStore({
       rightMenuOpen : false,
       x: 0,
       y: 0,
-      swiperindex:0
+      swiperindex:0,
+      modal:false
     }
   },
   mutations: {
@@ -25,6 +26,9 @@ const store = createStore({
     },
     swiperIndex(state,data){
       state.swiperindex=data
+    },
+    modalOpen(state,data){
+      state.modal = data  
     }
   },
   

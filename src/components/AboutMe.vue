@@ -1,6 +1,6 @@
 <template>
-<div class="aboutmeCon p-8 grid grid-rows-3 grid-flow-col gap-4">
-    <div class="row-span-3 p-5 m-2 font-bold">
+<div class="aboutmeCon p-8 grid grid-rows-3 grid-flow-col gap-4 sm:p-1 sm:gap-1">
+    <div class="row-span-3 p-5 m-2 font-bold sm:p-1 sm:m-1">
         <div class="flex">
             <div  class="working"><number v-if="$store.state.swiperindex == 1" :from="0" :to="11" :duration="2"></number></div>
             <div>+</div>
@@ -8,14 +8,14 @@
         
         <div class="subtext">Month<br/>Experience<br/>Work</div>
     </div>
-    <div class="font-bold text-3xl col-span-2 p-2">
+    <div class="font-bold text-3xl col-span-2 p-2 sm:text-xl sm:p-1">
         <div>안녕하세요! Front-End Web</div>
-        <div class="mt-2">개발자 이재창 입니다.</div>
+        <div class="mt-2 sm:mt-1">개발자 이재창 입니다.</div>
     </div>
     <div class="row-span-2 col-span-2">
         <div class="flex p-2 between">
             <div>
-                <div class="mb-11">
+                <div class="mb-11 sm:mb-2">
                     <div class="aboutIntro mb-3">꿈에는 지름길은 없다</div>
                     <div class="aboutContent">30살에 늦은 나이로 개발을 입문하엿지만 어제보다 조금 성장하자는 목표를 가지고 노력하고 있습니다. </div>
                 </div>
