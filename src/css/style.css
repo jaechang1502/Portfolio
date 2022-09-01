@@ -44,7 +44,7 @@
       }
       .header_left nav{
         margin-left:1rem;
-        font-size: 0.2rem;
+        font-size: 0.6rem;
       }
     }
   
@@ -199,10 +199,14 @@
     }
   }    
     /*Career*/
+    .career{
+      left: 100px;
+      top:150px;
+  }
     @media only screen and (max-width: 576px) {
       .career{
         left: 15px;
-        top:150px;
+        top:100px;
       }
     }
 

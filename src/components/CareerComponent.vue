@@ -35,10 +35,7 @@ export default {
 </script>
 
 <style>
-    .career{
-        left: 100px;
-        top:150px;
-    }
+  
     .bg-white-trasperate{
        background-color: rgb(255,255,255,0.5);
     }
