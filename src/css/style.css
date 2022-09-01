@@ -141,8 +141,8 @@
   @media only screen and (max-width: 576px) {
     .aboutmeCon{
       position: relative;
-      top:10px;
-      left: 0px;
+      top:18px;
+      left: 35px;
     }
     .aboutmeCon .subtext{
       opacity: 0.4;
@@ -161,11 +161,51 @@
     }
     .aboutIntro{
        color: rgba(0,0,0, 0.5);
-       font-size: 0.5rem;
+       font-size: 0.7rem;
     }
+    .mobileAboutcon{
+      display:flex;
+    }
+    .aboutContent{
+      color: rgb(0,0,0,0.5);
+      width: 70%;
+      font-size:0.3rem;
+  }
   }
   /*Skills*/
-  
+  .skills .skillcon{
+    left:5rem;
+}
+  .skillSubCon{
+    position: relative;
+    left:100px;
+  }
+  @media only screen and (max-width: 576px) {
+    .skills .skillcon{
+      left:2rem;
+      bottom:2rem;
+  }
+    .skills .skillsbackground img{
+      height: 100%;
+    }
+    .skillSubCon{
+      position: relative;
+      font-size:0.5rem;
+      left:60px;
+    }
+    .skillSubCon img{
+      width: 2rem;
+      height: 2rem;
+    }
+  }    
+    /*Career*/
+    @media only screen and (max-width: 576px) {
+      .career{
+        left: 15px;
+        top:150px;
+      }
+    }
+
 
 
   /* contactMe*/
@@ -193,4 +233,15 @@
 .contactMe .sub_con{
     color: rgb(255, 255, 255,0.5);
     font-size: 1rem;
+}
+@media only screen and (max-width: 576px) {
+  .contactMeCon img{
+    height: 100%;
+    object-fit: cover;
+  }
+  .contactMeSub {
+    position: absolute;
+    left: 26px;
+    top: 220px;
+  }
 }
