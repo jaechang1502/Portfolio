@@ -200,13 +200,13 @@
   }    
     /*Career*/
     .career{
-      left: 100px;
-      top:150px;
+      right: 200px;
+      bottom:30px;
   }
     @media only screen and (max-width: 576px) {
       .career{
-        left: 15px;
-        top:100px;
+       right: 100px;
+       bottom:30px;
       }
     }
 

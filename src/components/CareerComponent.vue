@@ -1,6 +1,6 @@
 <template>
   <div class="mt-8">
-    <div class="absolute font-extrabold sm:text-5xl xxs:text-2xl career">
+    <div class="relative font-extrabold sm:text-5xl xxs:text-2xl career">
       Career
     </div>
     <div>
@@ -67,6 +67,7 @@
         <div class="text-base mt-2">
           취미생활을 웹사이트로 만들어 보는 중입니다
         </div>
+        <a class="text-base text-cyan-600 mt-2" href="https://github.com/jaechang1502/Mydiary" target="_blank">오로지 프론트로만 하는 일기장</a>
       </div>
     </div>
     <Transition v-if="$store.state.swiperindex == 3" name="slide-fade">
